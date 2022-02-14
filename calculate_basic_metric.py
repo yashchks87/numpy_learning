@@ -5,6 +5,9 @@ g_truth = np.random.choice([0,1], size=2000000)
 # prediction array consists of probability scores
 preds = np.random.rand(2000000)
 
+
+# After doing timed module numpy implementation is much faster than the regular one.
+
 def calculate_numpy_way(g_truth, preds, thres=0.5):
 	# create updated labels with threshold as a score
     updated_labels = np.where(preds > thres, 1, 0)
