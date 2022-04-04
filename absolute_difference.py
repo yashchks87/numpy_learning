@@ -6,5 +6,3 @@ x_numpy = np.random.rand(10000000)
 y_numpy = np.random.rand(10000000)
 
 z_numpy = np.absolute(x_numpy - y_numpy)
-
-
